@@ -1,0 +1,15 @@
+{% extends 'profanity_text/layout.html' %}
+
+{% block title %}
+Profanity Text
+{% endblock %}
+
+{% block body %}
+<form action="" method="POST">
+    {% csrf_token %}
+    <textarea name="content" id="content" cols="30" rows="10" placeholder="Input Your Text Here....."></textarea>
+    <input type="submit" value="Check Profanity">
+</form>
+<h1>Result:</h1>
+<p>{{ result }}</p>
+{% endblock %}
