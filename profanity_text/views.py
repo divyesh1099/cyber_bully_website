@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import Cusslist
 import datetime
+
 # Our Main Logic
 def convert_cuss_word_to_stars(a_word):
 	final_starred_word ="*"*len(a_word)
@@ -44,4 +45,3 @@ def index(request):
         "result":result
     }
     return render(request, 'profanity_text/index.html', context)
-
