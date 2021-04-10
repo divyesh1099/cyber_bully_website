@@ -5,3 +5,4 @@ from .models import Cusslist
 @admin.register(Cusslist)
 class CusslistAdmin(admin.ModelAdmin):
     list_display = ['cussword', 'created', 'edited']
+    search_fields = ['cussword']

@@ -1,12 +1,12 @@
 from django.shortcuts import render
 from .models import Cusslist
-
+import datetime
 # Our Main Logic
 def convert_cuss_word_to_stars(a_word):
 	final_starred_word ="*"*len(a_word)
 	return final_starred_word
 
-def cheeck_special_character(a_string, a_list):
+def check_special_character(a_string, a_list):
     list_of_words_from_string = a_string.split()
     for a_word in list_of_words_from_string:
         # If the word is alpha numeric
@@ -39,12 +39,9 @@ cuss_words_list=list(Cusslist.objects.all().values_list('cussword', flat=True))
 
 # Create your views here.
 def index(request):
-    result = ''
-    if request.method == "POST":
-        content = request.POST['content']
-        # We Check profanity Here
-        result = cheeck_special_character(content, cuss_words_list)
-    context = {
-        'result':result
+    result = "Show Result Here"
+    context ={
+        "result":result
     }
     return render(request, 'profanity_text/index.html', context)
+
