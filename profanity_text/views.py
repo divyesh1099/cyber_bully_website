@@ -12,7 +12,7 @@ def check_special_character(a_string, a_list):
     for a_word in list_of_words_from_string:
         # If the word is alpha numeric
         if a_word.isalnum():
-            if a_word in cuss_words_list:
+            if a_word.lower() in cuss_words_list:
                 list_of_words_from_string[list_of_words_from_string.index(a_word)] = convert_cuss_word_to_stars(a_word)
             else:
                 pass
@@ -26,8 +26,9 @@ def check_special_character(a_string, a_list):
                     streak += 1
                 else:
                     streak = 0
+                    some_word=""
                 if streak >1:
-                    if some_word in cuss_words_list:
+                    if some_word.lower() in cuss_words_list:
                         list_of_words_from_string[list_of_words_from_string.index(a_word)] = convert_cuss_word_to_stars(a_word)
                     else:
                         pass
@@ -40,8 +41,24 @@ cuss_words_list=list(Cusslist.objects.all().values_list('cussword', flat=True))
 
 # Create your views here.
 def index(request):
-    result = "Show Result Here"
+
+    result=""
+    if request.method=="POST":
+        s=request.POST['content']
+        result = check_special_character(s,cuss_words_list)
     context ={
-        "result":result
+           "result":result
     }
     return render(request, 'profanity_text/index.html', context)
+
+def save_cusswords(request):
+    a=""
+    if request.method=="POST":
+        a=request.POST['cuss']
+    b=a.splitlines() 
+    
+    for i in b:
+         z=Cusslist.objects.create(cussword=i,created=datetime.datetime.now(),edited=datetime.datetime.now()) 
+         z.save()  
+
+    return render(request,"profanity_text/save_cusswords.html")
