@@ -41,24 +41,22 @@ cuss_words_list=list(Cusslist.objects.all().values_list('cussword', flat=True))
 
 # Create your views here.
 def index(request):
-
     result=""
     if request.method=="POST":
-        s=request.POST['content']
-        result = check_special_character(s,cuss_words_list)
+        user_input_string = request.POST['content']
+        result = check_special_character(user_input_string, cuss_words_list)
     context ={
            "result":result
     }
     return render(request, 'profanity_text/index.html', context)
 
 def save_cusswords(request):
-    a=""
-    if request.method=="POST":
-        a=request.POST['cuss']
-    b=a.splitlines() 
-    
-    for i in b:
-         z=Cusslist.objects.create(cussword=i,created=datetime.datetime.now(),edited=datetime.datetime.now()) 
-         z.save()  
+    a_string = ""
+    if request.method == "POST":
+        a_string = request.POST['cuss']
+    list_of_cusswords = a_string.splitlines() 
+    for a_word in list_of_cusswords:
+        a_cussword = Cusslist.objects.create(cussword=a_word,created=datetime.datetime.now(),edited=datetime.datetime.now()) 
+        a_cussword.save()  
 
     return render(request,"profanity_text/save_cusswords.html")
