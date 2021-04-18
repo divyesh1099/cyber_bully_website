@@ -53,7 +53,7 @@ def index(request):
     context ={
            "result":result
     }
-    return render(request, 'profanity_text/index.html', context)
+    return render(request, 'profanity_text/Home.html', context)
 
 def save_cusswords(request):
     a_string = ""
