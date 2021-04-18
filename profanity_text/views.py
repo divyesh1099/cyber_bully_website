@@ -47,11 +47,14 @@ cuss_words_list=tuple(Cusslist.objects.all().values_list('cussword', flat=True))
 # Create your views here.
 def index(request):
     result=""
+    user_input_string = ''
     if request.method=="POST":
         user_input_string = request.POST['content']
+        print(user_input_string)
         result = check_special_character(user_input_string, cuss_words_list)
     context ={
-           "result":result
+           "result":result,
+           "original": user_input_string
     }
     return render(request, 'profanity_text/Home.html', context)
 
