@@ -50,7 +50,7 @@ def index(request):
     user_input_string = ''
     if request.method=="POST":
         user_input_string = request.POST['content']
-        print(user_input_string)
+       
         result = check_special_character(user_input_string, cuss_words_list)
     context ={
            "result":result,

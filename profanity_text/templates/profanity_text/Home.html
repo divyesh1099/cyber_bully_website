@@ -92,27 +92,27 @@
                 <div class="u-container-layout u-valign-bottom-xs u-valign-top-lg u-valign-top-xl u-container-layout-1">
                   <p class="u-text u-text-1">ENTER TEXT<span style="font-weight: 700;"></span>
                   </p>
-                  <form action="" method="post">
+                  <form action="/profanity_text/#scrollresult" method="post">
                     {% csrf_token %}
                       <div class="form-floating">
-                        <textarea name="content" id="content" class="form-control m-1" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                        <label for="floatingTextarea">{{ original }}</label>
+                        <textarea name="content" id="content" class="p-1 m-4"  placeholder="Leave a comment here" id="floatingTextarea" rows="20" cols="60">{{ original }}</textarea>
+                        <label for="floatingTextarea"></label>
                       </div>                      
-                    <button type="submit" value="Check Profanity" class="btn btn-lg btn-dark">Check Profanity</button>
+                    <button type="submit" value="Check Profanity" class="btn btn-lg btn-dark mx-4">Check Profanity</button>
                   </form>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2">
                 <div class="u-container-layout u-container-layout-2">
-                  <h2 class="u-custom-font u-font-georgia u-text u-text-2">PROFANITY FILTER<span style="font-weight: 700;"></span>
+                  <h2 class="u-custom-font u-font-georgia u-text u-text-2" id="scrollresult">PROFANITY FILTER<span style="font-weight: 700;"></span>
                     <br>
                   </h2>
                   <p class="u-text u-text-3">Converts profane text into Asterisk (*)</p>
                   <div class="u-border-9 u-border-palette-1-base u-container-style u-expanded-width-sm u-expanded-width-xs u-group u-white u-group-1">
                     <div class="u-container-layout u-container-layout-3">
-                      <p class="u-text u-text-4">FILTERED TEXT<span style="font-weight: 700;"></span>                        
+                      <p class="u-text u-text-4" >FILTERED TEXT<span style="font-weight: 700;"></span>                        
                       </p>
-                      <h1>{{ result }}</h1>
+                      <h3>{{ result }}</h3>
                     </div>
                   </div>
                 </div>

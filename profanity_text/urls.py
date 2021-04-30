@@ -5,4 +5,5 @@ app_name = 'profanity_text'
 urlpatterns = [
     path("", views.index, name = 'index'),
     path("cuss",views.save_cusswords,name='cuss'),
+    
 ]
