@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "booming-coast-313509",
+  "private_key_id": "bb494bed12516dbb687a05032d10cfbd628f949f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC+j15DJYpWY02h\nkKlJ0WRBIhMtzJT/ulA8mb5hJmUMlZ+I0ZDErWg0KPGSvDC0ogCaPkZaYg1i3JqU\nBLPKgy9LLrkG29Fmt7h9RR3QzVev6YSClJ5R77RZgrWV1+GLUr1vHMH2StSRD9uz\nuLlS/zS7HhJozKlHlGLAbrxQVI5qZPbQgogvU4+f5H+NZ5iVSGywO+jH86Zi9PKO\n4JOTqgm/f3Hy/ZIdKzJxTy7OpgYOgHscuuAXqd+5z9oVqYfLG8+r5G/Va3NjTf1c\nwL/uLFgFGCzCSL4ZF/jLDwtYbzxZR6dFJvV2h3bWmlO3ga/UFc8/BSeJMGU4Kbim\nA0VRJ/rJAgMBAAECggEAOddBmOcJrPwaYbqLsATXRe/mW2X4KgEu/p36C/n//Qhj\ncr+Nji1GbmKpJM1riUCNJ0RUzXVqs8HbR6d/vS4BinQFpH/PeTq1zIxQpwLVJWef\nmZUr0xoLp4nFvVRYORZlupbDhxMin19tZAljcz5UjqFrnBTXIwt2yAs0rLtluQQi\n5q+YY2LC7EpbDK1jsXOh/Dz2sf9m1QlXrj2w3roAjl7czIJFWu/jT1XdnZNJ1IdX\nNC22yjA141PfKSKnpxwJc8t0RjsWVo2Tdhh/IejEx5jkkTMxvW8Los91iUOmIkgJ\n3ZoKci4kIhJ84vNQWotw1vHQrIX5HGtz7vI6/+ne2wKBgQDvJYti4ULXTjaNMisC\noyf23cfBvnHlZLWtcITqpt+ZfP+ctLP7XCEQaZQNZlUpNimqd/FVC7/s9K1ZWMPz\nZVRE1wWyLu/AjskH/vr77NABiZFPHb9sXEnC3NTpb20u4jzjy9q/LxI64aDVGOvn\ncpehd1tu6VAX7Q3Q8MqykRjQNwKBgQDL/UUu9QI7VT9BLFeZi3cYqEndgNDRXRCh\nGzne1Bv+RdBv1f0E4Rs+6YSxzOPCUVBGRIbk5NfSNEG5QLSJucLgXl84JKXdDvww\n73v4i3/phwRLBea0iFJES193yIYavzQmIIimx1GH9aLDazpjbjDjWJtBNQWEkV+1\nTpzr2sIM/wKBgCWU1dm9Ip7pOKNpvd6VO0ONSMYGoql08SQHaavie4MIZLcAosQe\nj0ef/9c3PKzUSSnz3WYLCac4MEG5NFn8k4iZ7dg5jg3JoofyJwkOBwYm00IGn71s\np17LC15/1z2l6gG2WHLw98FvEbJLT0847+E8+45rdd28sA4kuQXkzWxzAoGBAKZS\nI+WMeTxdXkzKVcZosztUg51p2VjLM7LYGxA3C3f//lohNMKUs/1QsxOxRgb6+6O/\nXeklOV83olrkig89ecosyCBjqSUbgb54lTDqtOl4X6S39ApAmCr89aMZyVXnjiKE\nJkctfqmHOyVwuVO21X+YkEXTcGNNkKaoqUOYwt2LAoGAQ+KLQ4UKXzkSldxIPe/T\nYvZntoc92PKLrr455gFk9zWTO+cNtdUAP+etJpAjshHBy+8cVkL2CNqRvFjiptLy\nK2hLUhZXtSFFdlmb0jTblixy6Y6R2kvbm6621e0UiOcYyWW1/vQ1OyLy5EVnOQVt\n/zrEVb0wyisDT2pWnp/VLyo=\n-----END PRIVATE KEY-----\n",
+  "client_email": "miniproject@booming-coast-313509.iam.gserviceaccount.com",
+  "client_id": "106576377470075819185",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/miniproject%40booming-coast-313509.iam.gserviceaccount.com"
+}
